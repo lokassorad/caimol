@@ -1,0 +1,1271 @@
+/* Cookies 2018 COMMON */
+
+/******************************
+        COOKIES 2018
+*******************************/
+
+.cookies-region .articulo_ligero{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    height: 100%;
+}
+
+.cookies-region .contenido_articulo{
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.3);
+    height:100%;
+}
+
+.cookies-region .contenido_articulo #cookie {
+    height: 100%;
+    display: table;
+}
+
+.cookies-region .contenido_articulo #cookie-form {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cookies-region .articulo_ligero #cookie-form:before{
+    content:'';
+    background-image:url('../../particulares/CSS/Estaticos/images/logo.png');
+    background-color:#fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+#cookies_uk #cookie-form:before{
+    display: none;
+}
+.cookies-region .contenido_articulo .texto{
+    width: 100%;
+    margin: 0 auto;
+}
+.cookies-region .contenido_articulo .title{
+    text-align: center;
+}
+.cookies-region .contenido_articulo .title h2,
+.cookies-region .contenido_articulo .title p{
+    font-style: normal;
+    padding:0px;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    /*font-family: 'OpenSans-Bold', Arial, sans-serif;*/
+    font-weight: 600;
+    color:#000;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 20px;
+}
+.cookies-region .contenido_articulo .texto .texto_cookie{
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.cookies-region .contenido_articulo .texto .texto_cookie a{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cookies-region  .button_wrap {
+    display: block;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+.cookies-region .button_wrap .btn {
+    padding: 0;
+    width: 82%;
+    margin: 0 auto;
+}
+.cookies-region .contenido_articulo .title{
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 800px){
+    .cookies-region .articulo_ligero, #cookies-region.articulo_ligero  {
+        height: auto;
+    }
+
+    .cookies-region .contenido_articulo #cookie, #cookies-region.contenido_articulo #cookie {
+        display: block;
+        height: auto;
+    }
+
+    .cookies-region .contenido_articulo #cookie-form, #cookies-region.contenido_articulo #cookie-form {
+        display: block;
+    }
+
+    .cookies-region .articulo_ligero #cookie-form:before, #cookies-region.articulo_ligero #cookie-form:before{
+        margin: 0 auto;
+    }
+
+    .cookies-region .contenido_articulo .title h2,
+    .cookies-region .contenido_articulo .title p{
+        font-size: 2.0rem;
+        line-height: 2rem;
+        padding-bottom: 10px;
+    }
+    .cookies-region .contenido_articulo .texto{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .cookies-region .contenido_articulo .texto .texto_cookie{
+        text-align: justify;
+        /*max-width: 50%;*/
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .cookies-region .button_wrap {
+        display: inline-block;
+        margin: 10px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .cookies-region .button_wrap .btn {
+        width: auto;
+    }
+}
+/*****************************
+        FORM COOKIES
+*****************************/
+.capaCookies .main-component{
+    overflow:hidden;
+}
+.capaCookies .main-component .component-group ul li strong{
+    text-transform: capitalize;
+}
+.capaCookies label {
+    margin-bottom: 0px;
+}
+.capaCookies .custom-form-checkbox {
+    vertical-align: middle;
+    /*vertical-align: bottom;*/
+    background: url(https://www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/check.svg) no-repeat scroll transparent;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    margin-top: 1.0rem;
+}
+.capaCookies .tb-text-left .custom-form-checkbox, .capaCookies .tb-text-right li:first-child .input-group .custom-form-checkbox{
+    margin-top: 0rem;
+}
+.capaCookies  .tb-text .tb-text-c li strong {
+    color: #555;
+    padding-right: 1.0rem;
+    padding-left: 0.2rem;
+}
+.capaCookies .custom-form-checkbox.custom-form-checked {
+    background: url(https://www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/checkSelected.svg) no-repeat scroll transparent;
+    border: 1px solid #ccc;
+}
+.capaCookies .custom-form-checkbox.custom-form-checked.custom-form-focused {
+    background: url(https://www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/checkSelected.svg) no-repeat scroll transparent;
+}
+.capaCookies .tb-text .tb-text-c li .input-group{
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-top: 0rem;
+    width: 30%;
+}
+.capaCookies .tb-text .tb-text-c li label {
+    /* display: table-cell; */
+    vertical-align: middle;
+    /* white-space: nowrap; */
+    /* padding-top: 0rem; */
+}
+.capaCookies input.white {
+    height: 50px;
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #007eae;
+    color: #007eae;
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+    /* line-height: 51px; */
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 0 0.25%;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: inherit;
+}
+
+.capaCookies input.backg2 {
+    height: 50px;
+    background: #007eae;
+    box-shadow: none;
+    border: 0px;
+    color: #fff;
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+    line-height: 1.6rem;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 0 0.25%;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: inherit;
+}
+
+.capaCookies input.naranja {
+    height: 50px;
+    background: #f4c53d;
+    box-shadow: none;
+    border: 1px solid #f4c53d;
+    color: #000;
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+    /* line-height: 51px; */
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 0 0.25%;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    display: none;
+}
+
+.capaCookies.sticky input.naranja {
+    padding: 0 3rem;
+    display: block;
+}
+
+@media(min-width: 768px){
+    .capaCookies.sticky input.naranja {
+        border-radius: 3rem;
+    }
+    .capaCookies input.naranja {
+        display: block;
+    }
+}
+
+.capaCookies .tb-text.main-component{
+    width: auto;
+}
+
+.capaCookies .tb-text .tb-text-c li a {
+    text-align: right;
+    font-size: 1.4rem;
+}
+@media(min-width: 370px){
+    .capaCookies .tb-text.main-component{
+        width: 100%;
+    }
+
+    .capaCookies .tb-text .tb-text-c li a {
+        text-align: right;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 768px){
+    .capaCookies .custom-form-checkbox {
+        margin-top: 1.5rem;
+    }
+}
+/*** Opcion 2 ***/
+.capaCookies .tb-text-left .tb-text-down .custom-form-checkbox{
+    margin-top: 1.0rem;
+}
+.capaCookies .tb-text-down li:first-child .input-group .custom-form-checkbox{
+    margin-top: 0rem;
+}
+.capaCookies .tb-text .tb-text-c.tb-text-down {
+    padding: 1.5rem 0;
+    width: 100%;
+    display: table-cell;
+    margin: 0 auto;
+    border-top: 0rem solid #efefef;
+}
+@media (min-width: 768px){
+    .capaCookies .tb-text-left .tb-text-down .custom-form-checkbox{
+        margin-top: 1.5em;
+    }
+    .capaCookies .tb-text .tb-text-c.tb-text-down {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.capaCookies.Opcion2 .tb-text-c.tb-text-left a{
+    display:block;
+    text-decoration: none;
+}
+.capaCookies.Opcion2 .tb-text-c.tb-text-left a.hideCookies{
+    display:none;
+}
+.capaCookies.Opcion2 .tb-text-c.tb-text-down{
+    display: block;
+}
+
+
+.message {
+    /*font-family: 'OpenSans-bold', Arial, sans-serif;*/
+    color: #004f70;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+#home .message{
+    margin: 2rem 0 0 0;
+    overflow: hidden;
+}
+
+.message.ok, .message.ko {
+    margin: 2rem 0 0;
+}
+
+.message img {
+    margin-right: 0.5rem;
+}
+.contenido_articulo h3 {
+    clear:both;
+}
+/** Aviso home 2 ***/
+.cookies-region .contenido_articulo #cookie2 {
+    display: table;
+    height:100%;
+}
+
+.cookies-region .articulo_ligero #cookie2 #cookie-form:before {
+    display: inline;
+}
+
+.cookies-region .contenido_articulo #cookie2  .logo:before {
+    content: '';
+    background-image: url(../../particulares/CSS/Estaticos/images/logo.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+@media (min-width: 800px){
+    .cookies-region .contenido_articulo #cookie2 {
+        width: 100%;
+        margin:0 auto;
+        background: #fff;
+        display: block;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .logo {
+        width: 29%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .cookies-region .contenido_articulo #cookie2  .logo:before {
+        margin: 0 auto;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .texto {
+        width: 39%;
+        margin: 0;
+        display: inline-block;
+        text-align: left;
+        padding: 1.5rem 0;
+        vertical-align: middle;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .texto .title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .button {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width:1400px){
+    .cookies-region .contenido_articulo #cookie2 {
+        width: 80%;
+        background: #fff;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .logo {
+        width: 25%;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .texto {
+        width: 48%;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .button {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1600px){
+    .cookies-region .contenido_articulo #cookie2 {
+        width: 70%;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .logo {
+        width: 20%;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .texto {
+        width: 58%;
+    }
+
+    .cookies-region .contenido_articulo #cookie2 .button {
+        width: 20%;
+    }
+}
+
+.row.center .col-xs-6 {
+    margin: 1rem auto 0;
+    float: none;
+    width: 100%;
+}
+
+@media (min-width:768px){
+    .row.center .col-xs-6 {
+        width: 50%;
+    }
+}
+
+/* Caixabank.com + Internacionales */
+#home > .articulo_ligero .contenido_articulo #acookie{
+    width: auto!important;
+}
+#home > .articulo_ligero > .contenido_articulo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#home > .articulo_ligero {
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    /*margin-top: -2em;*/
+    float: left;
+    width: 100%;
+    top: 0;
+}
+
+
+#home .articulo_ligero .contenido_articulo{
+    background: #fff;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.3);
+}
+
+#home .contenido_articulo .texto{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#home .contenido_articulo .title{
+    text-align: center;
+}
+
+#home .contenido_articulo .title h2{
+    font-style: normal;
+    padding:0px;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    /*font-family: 'OpenSans-Bold', Arial, sans-serif;*/
+    font-weight: 600;
+    color:#000;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    background: #fff;
+    margin: 0;
+}
+
+#home .contenido_articulo .texto .texto_cookie{
+    text-align: justify;
+    max-width: 100%;
+    margin: 0;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+#home .contenido_articulo .texto .texto_cookie a {
+    text-decoration: underline;
+    color: #007eae;
+    font-weight: bold;
+}
+
+#home  .button_wrap {
+    margin: 10px auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#home .button_wrap .btn {
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+}
+
+#home .button_wrap .btn a {
+    background-color: #007eae;
+    border-color: #007eae;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    line-height: 1.4rem;
+    font-size: .9rem;
+    position: relative;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.3s ease-in;
+    text-decoration: none!important;
+}
+
+#home .button_wrap .btn a:hover {
+    text-decoration: none;
+}
+
+#home .contenido_articulo .title{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#home .boton_guardar,
+#home .boton_cancelar{
+	/*width: 45%;
+    float: left;*/
+    margin: 30px 15px;
+}
+#home .capaCookies.sticky{
+    display: inline-block;
+    width: auto;
+    right: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+#home .col-xs-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#home .capaCookies .row.center .col-xs-6{
+    margin: 2rem auto;
+}
+#home .capaCookies input.white{
+    font-size: 14px;
+    font-weight: bold;
+}
+#home .capaCookies input.naranja{
+    font-size: 14px;
+    font-weight: bold;
+}
+#home .capaCookies .text-center{
+    text-align: center;
+}
+/* Estilos sobreescritos de CaixabankGlobal */
+#div_texto {
+    background-color: #fff;
+}
+
+#div_texto #texto_cookie p a {
+    color: #007eae !important;
+}
+
+/**/
+@media(max-width: 992px){
+    #cookies_uk{
+        height: 100%;
+    }
+}
+#cookies_uk{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+#cookies_uk{
+    background-color: #fff;
+}
+#cookies_uk:before{
+    content:'';
+    background-image:url('../../uk/Estaticos/Imagenes/logo_laCaixa.png');
+    background-color:#fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+#cookies_uk{
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.3);
+}
+#cookies_uk .texto{
+    width: 100%;
+    margin: 0 auto;
+}
+#cookies_uk .title{
+    text-align: center;
+}
+#cookies_uk .title h2{
+    font-style: normal;
+    padding:0px;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    /*font-family: 'OpenSans-Bold', Arial, sans-serif;*/
+    font-weight: 600;
+    color:#000;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+#cookies_uk .texto .texto_cookie{
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto 20px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+}
+#cookies_uk .texto .texto_cookie a{
+    color: #007eae;
+    text-decoration: underline;
+    transition: all 0.3s ease-in;
+}
+#cookies_uk .texto .texto_cookie  a:hover,
+#cookies_uk .texto .texto_cookie  a:focus,
+#cookies_uk .texto .texto_cookie  a:active {
+    color: #004f70;
+}
+
+#cookies_uk .texto .texto_cookie  a:focus{
+    outline: 1px dotted black;
+    transition: all 0s;
+}
+
+#cookies_uk .texto .texto_cookie  a:disabled {
+    color: #1a1a1a;
+}
+#cookies_uk  .button_wrap {
+    display: block;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+#cookies_uk .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+#cookies_uk .button_wrap .btn {
+    padding: 0;
+    width: 82%;
+    margin: 0 auto;
+}
+#cookies_uk .button_wrap .btn > a{
+    font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    border: 2px solid #007eae;
+    color: #fff !important;
+    padding: 1rem !important;
+    border-radius: 0.2rem;
+    line-height: 14px;
+    font-size: 14px;
+    /* height: 40px; */
+    position: relative;
+    background: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none !important;
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.3s ease-in;
+}
+@media (min-width: 768px){
+    #cookies_uk .button_wrap .btn > a {
+        width: auto;
+        max-width: none;
+    }
+}
+#cookies_uk .button_wrap .btn.btn-blue > a{
+    background-color: #007eae;
+    border: 2px solid #007eae;
+    color: #fff;
+    padding: 10px!important;
+}
+#cookies_uk .title{
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 768px){
+    #cookies_uk .title h2{
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+    #cookies_uk .texto{
+        width: 60%;
+        margin: 0 auto;
+    }
+    #cookies_uk .texto .texto_cookie{
+        text-align: justify;
+        /*max-width: 50%;*/
+        max-width: 100%;
+        margin: 0 auto 20px;
+        font-size: 12px;
+        /*font-weight: 600;*/
+    }
+    #cookies_uk .button_wrap {
+        display: inline-block;
+        margin: 10px auto;
+        width: 100%;
+        text-align: center;
+    }
+    #cookies_uk .button_wrap .btn {
+        width: auto;
+    }
+}
+
+/* Destacados legales cookies */
+.tb-text {
+    width: 100%;
+    border: 0.1rem solid #efefef;
+}
+@media (min-width: 768px) {
+    .tb-text {
+        display: table;
+    }
+}
+@media (min-width: 768px) {
+    .tb-text .tb-text-r {
+        display: table-row;
+    }
+}
+.tb-text .tb-text-c {
+    border-top: 0.1rem solid #efefef;
+    padding: 1.5rem;
+}
+@media (min-width: 768px) {
+    .tb-text .tb-text-c {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+.tb-text .tb-text-r:first-child .tb-text-c {
+    border-top: none;
+}
+@media (max-width: 767px) {
+    .tb-text .tb-text-r .tb-text-c.tb-text-right {
+        border-top: none;
+    }
+}
+.tb-text .tb-text-c.tb-text-right {
+    padding-top: 0;
+}
+@media (min-width: 768px) {
+    .tb-text .tb-text-c.tb-text-right {
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+}
+.tb-text .tb-text-c h4 {
+    display: inline;
+    color: #555;
+    font-size: 1.6rem;
+    font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
+}
+.tb-text .tb-text-c p {
+    display: inline;
+}
+.tb-text .tb-text-c ul {
+    display: table;
+    margin: 0;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .tb-text .tb-text-c ul {
+        /*width: auto;*/
+        width: 100%;
+    }
+}
+.tb-text .tb-text-c li {
+    display: table-row;
+    padding: 0;
+    background: none;
+}
+.tb-text .tb-text-c li strong,
+.tb-text .tb-text-c li a {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-top: 1rem;
+}
+@media (min-width: 768px) {
+    .tb-text .tb-text-c li strong,
+    .tb-text .tb-text-c li a {
+        padding-top: 1.5rem;
+    }
+}
+.tb-text .tb-text-c li:first-child strong,
+.tb-text .tb-text-c li:first-child a {
+    padding-top: 0;
+}
+.tb-text .tb-text-c li strong {
+    color: #555;
+    padding-right: 1.5rem;
+}
+.tb-text .tb-text-c li a {
+    text-align: right;
+}
+
+.page-wrapper .capaCookies ~ .article-block .article-content li a {
+    word-break: break-all;
+}
+
+.capaCookies p.text-center {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .capaCookies p.text-center {
+        display: block;
+    }
+}
+
+/** Aviso home 2 family ***/
+#home .contenido_articulo #cookie2 {
+    display: table;
+    height:100%;
+}
+
+#home .articulo_ligero #cookie2 #cookie-form:before {
+    display: inline;
+}
+
+#home .contenido_articulo #cookie2  .logo:before {
+    content: '';
+    background-image: url(../../particulares/CSS/Estaticos/images/logo.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+@media (min-width: 768px){
+    #home .contenido_articulo #cookie2 {
+        width: 100%;
+        margin:-10px auto;
+        background: #fff;
+        display: block;
+    }
+
+    #home .contenido_articulo #cookie2 .logo {
+        width: 29%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #home .contenido_articulo #cookie2  .logo:before {
+        margin: 0 auto;
+    }
+
+    #home .contenido_articulo #cookie2 .texto {
+        width: 39%;
+        margin: 0;
+        display: inline-block;
+        text-align: left;
+        padding: 1.5rem 0;
+        vertical-align: middle;
+    }
+
+    #home .contenido_articulo #cookie2 .texto .title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #home .contenido_articulo #cookie2 .button {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width:1400px){
+    #home .contenido_articulo #cookie2 {
+        width: 80%;
+        background: #fff;
+    }
+
+    #home .contenido_articulo #cookie2 .logo {
+        width: 25%;
+    }
+
+    #home .contenido_articulo #cookie2 .texto {
+        width: 48%;
+    }
+
+    #home .contenido_articulo #cookie2 .button {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1600px){
+    #home .contenido_articulo #cookie2 {
+        width: 70%;
+    }
+
+    #home .contenido_articulo #cookie2 .logo {
+        width: 20%;
+    }
+
+    #home .contenido_articulo #cookie2 .texto {
+        width: 58%;
+    }
+
+    #home .contenido_articulo #cookie2 .button {
+        width: 20%;
+    }
+}
+.row.center .col-xs-6 {
+    margin: 1rem auto 0;
+    float: none;
+    width: 100%;
+}
+
+@media (min-width:768px){
+    .row.center .col-xs-6 {
+        width: 50%;
+    }
+}
+/* caixabank.com*/
+#home #contenedor-global #contenido-central .contenido_articulo .capaCookies .tb-text .tb-text-c li{
+    display: flex;
+}
+#home #contenedor-global #contenido-central .contenido_articulo .capaCookies .tb-text-c.tb-text-down li a {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    padding: 0;
+    align-self: flex-end;
+}
+
+#home #contenedor-global #contenido-central .contenido_articulo  .capaCookies .main-component .component-group ul li strong{
+    padding: 0;
+}
+.articulo_ligero#cookies-region{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    height: 100%;
+}
+
+.articulo_ligero#cookies-region .contenido_articulo{
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.3);
+    height:100%;
+}
+.articulo_ligero#cookies-region  .contenido_articulo #cookie {
+    height: 100%;
+    display: table;
+}
+
+.articulo_ligero#cookies-region  .contenido_articulo #cookie-form {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.articulo_ligero#cookies-region #cookie-form:before{
+    content:'';
+    background-image:url('../../particulares/CSS/Estaticos/images/logo.png');
+    background-color:#fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+.articulo_ligero#cookies-region #cookie-form .button{
+    padding: 10px 0;
+}
+
+@media (min-width: 800px){
+    #cookies-region.articulo_ligero  {
+        height: auto;
+    }
+
+    #cookies-region.contenido_articulo #cookie {
+        display: block;
+        height: auto;
+    }
+
+    #cookies-region.contenido_articulo #cookie-form {
+        display: block;
+    }
+
+     #cookies-region.articulo_ligero #cookie-form:before{
+        margin: 0 auto;
+    }
+
+}
+
+.articulo_ligero#cookies-region{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    height: 100%;
+}
+.articulo_ligero#cookies-region .contenido_articulo{
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.3);
+    height:100%;
+}
+#cookies-region .contenido_articulo #cookie2  .logo:before {
+    content: '';
+    background-image: url(../../particulares/CSS/Estaticos/images/logo.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 233px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.articulo_ligero#cookies-region #cookie-form .button{
+    padding: 10px 0;
+}
+#cookies-region .contenido_articulo .texto {
+    width: 60%;
+    margin: 0 auto;
+}
+#cookies-region .contenido_articulo .title h2 {
+    font-style: normal;
+    padding: 0px;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    /* font-family: 'OpenSans-Bold', Arial, sans-serif; */
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    background: #fff;
+    margin: 0;
+}
+#cookies-region .contenido_articulo .texto .texto_cookie {
+    text-align: justify;
+    max-width: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 19px;
+}
+#cookies-region .contenido_articulo .texto .texto_cookie a {
+    text-decoration: underline;
+    color: #007eae;
+    font-weight: bold;
+}
+#cookies-region .button_wrap {
+    margin: 10px auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#cookies-region .button_wrap .btn {
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+}
+#cookies-region .button_wrap .btn a {
+    background-color: #007eae;
+    border-color: #007eae;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    line-height: 1.4rem;
+    font-size: .9rem;
+    position: relative;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.3s ease-in;
+    text-decoration: none!important;
+}
+@media (min-width: 768px){
+    #cookies-region .contenido_articulo #cookie2 {
+        width: 100%;
+        margin:-10px auto;
+        background: #fff;
+        display: block;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .logo {
+        width: 29%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #cookies-region .contenido_articulo #cookie2  .logo:before {
+        margin: 0 auto;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .texto {
+        width: 39%;
+        margin: 0;
+        display: inline-block;
+        text-align: left;
+        padding: 1.5rem 0;
+        vertical-align: middle;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .texto .title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .button {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 800px){
+    #cookies-region.articulo_ligero  {
+        height: auto;
+    }
+
+    #cookies-region .contenido_articulo #cookie {
+        display: block;
+        height: auto;
+    }
+
+    #cookies-region .contenido_articulo #cookie-form {
+        display: block;
+    }
+
+    #cookies-region.articulo_ligero #cookie-form:before{
+        margin: 0 auto;
+    }
+
+}
+@media (min-width:1400px){
+    #cookies-region .contenido_articulo #cookie2 {
+        width: 80%;
+        background: #fff;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .logo {
+        width: 25%;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .texto {
+        width: 49%;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .button {
+        width: 25%;
+    }
+}
+@media (min-width: 1600px){
+    #cookies-region .contenido_articulo #cookie2 {
+        width: 70%;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .logo {
+        width: 20%;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .texto {
+        width: 59%;
+    }
+
+    #cookies-region .contenido_articulo #cookie2 .button {
+        width: 20%;
+    }
+}
+
+/** Quitar aviso cookies portugues**/
+html[lang="pt"] .cookies-region .articulo_ligero{
+    display:none;
+}

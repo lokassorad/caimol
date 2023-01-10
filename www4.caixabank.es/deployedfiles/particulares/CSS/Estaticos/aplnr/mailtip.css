@@ -1,0 +1,48 @@
+ul.mailtip {
+  zoom: 1; /* for IE6 IE7 clear float */
+  background-color: #ffffff;
+  list-style: none;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  text-align: left;
+  width: 100%!important;
+  /*font: italic 13px/1.5 Consolas, "Liberation Mono", Menlo, Courier, monospace, sans-serif;*/
+}
+ul.mailtip:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+ul.mailtip li {
+  line-height: 1;
+}
+ul.mailtip li p {
+  /*height: 28px;*/
+  text-align: inherit;
+  line-height: 2;
+  cursor: pointer;
+  margin: 0 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-family: 'OpenSans', Arial, serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #555555;
+}
+ul.mailtip li.active {  
+  background: #007eae;
+}
+ul.mailtip li.active p {
+  color: #ffffff;
+}
+ul.mailtip li.active.hover p {
+  color: #555555;
+}
+ul.mailtip li.hover {
+  background: #d9d9d9;
+}

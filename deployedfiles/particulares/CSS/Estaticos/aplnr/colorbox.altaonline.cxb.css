@@ -1,0 +1,163 @@
+
+/* Custom styles - L2016 Project */
+#cboxOverlay,
+#colorbox,
+#cboxWrapper,
+#cboxContent,
+#cboxLoadedContent,
+.cboxIframe {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+  z-index: 9999;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+#cboxOverlay, #colorbox {
+  position: fixed!important;
+  /*top: 0!important;*/
+  left: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+
+}
+#colorbox, #cboxOverlay, #cboxWrapper {
+  overflow: hidden;
+}
+#cboxOverlay {
+  -webkit-transition:all 0.5s linear 0s;
+  -moz-transition:all 0.5s linear 0s;
+  transition:all 0.5s linear 0s;
+  background-color: #000000;
+}
+#colorbox {
+  padding-top: 60px;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 99999;
+}
+#cboxWrapper {
+  position: relative;
+  width: 100%!important;
+  height: 100%!important;  
+  max-height: 480!important;  
+  top: 0!important;
+  left: 0!important;
+  margin: 0 auto;
+}
+@media (min-width: 640px){
+  #colorbox.open #cboxWrapper {
+    max-height: 90%!important;
+  }
+}
+
+#cboxWrapper > div:first-child,
+#cboxWrapper > div:last-child {
+  display: none;
+}
+#cboxWrapper > div, #cboxContent, #cboxLoadedContent, #cboxLoadingGraphic  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+  background-color: #ffffff;
+}
+#colorbox.open #cboxWrapper > div, 
+#cboxContent, 
+#cboxLoadedContent, 
+#cboxLoadingGraphic {
+  background-color: transparent;
+}
+#cboxLoadedContent {
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-overflow-scrolling: touch;
+}
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: transparent;  
+}
+#cboxLoadingGraphic {
+  background: url(../../../../../../www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/loading.gif) no-repeat center center;
+  max-height: 320px;
+}
+#colorbox #cboxTitle{display:none!important}
+#colorbox #cboxClose {
+  /*reset*/
+  border: 0 none;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  /* custom css */
+  position: absolute;
+  top: 0px;
+  width: 60px;
+  right: 15px;
+  content: 'bla';
+  text-indent: -9999px;
+  padding: 2.0rem;
+  width: 30px;
+  height: 30px;
+  background: url(../../../../../../www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/icon-close-cb.png) no-repeat center center transparent;
+  z-index: 9999;
+}
+
+/*end*/
+
+/* Colorbox version movil */
+@media (max-width: 640px){
+  #colorbox {
+    top: 100% !important;
+    transition: top 1s ease-in-out, opacity 0.5s linear;
+  }
+  #cboxOverlay {
+    top: 0;
+  }
+  #cboxWrapper {
+    position: relative;
+    max-width: 100%!important;
+    max-height: 100%!important;
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    display: block;
+    cursor: default;
+    overflow: visible;
+  }
+  #cboxWrapper > div {
+    display: block;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #cboxContent {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  #cboxLoadedContent  {
+    background-color: #ffffff;
+  }
+  #cboxLoadedContent object, #cboxLoadedContent iframe {
+    height: 100% !important;
+    margin: 0 auto;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+    padding: 0;
+    position: static;
+    width: 100% !important;
+  }
+
+}

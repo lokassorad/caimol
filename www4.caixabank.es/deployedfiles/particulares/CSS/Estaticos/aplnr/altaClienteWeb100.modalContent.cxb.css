@@ -1,0 +1,2496 @@
+@charset "UTF-8";
+/*******************************************************************************
+ *  CSS Document: altaClienteWeb100.modalContent.cxb.css
+ *  Author: Felix Cordero
+ *  Version: 1.0
+ *  Description: Estilos para los contenidos de las ventanas modales del 
+ *  formulario de alta para Caixabank version responsive 2016
+ *  ***************************************************************************/
+/*	Fonts	*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/fonts/aplnr/R2016/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/fonts/aplnr/R2016/OpenSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/fonts/aplnr/R2016/OpenSans-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraboldItalic';
+  src: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/fonts/aplnr/R2016/OpenSans-ExtraboldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/fonts/aplnr/R2016/OpenSans-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* @Basic ***/
+.apl-modal {
+  position: relative;
+  background-color: #ffffff;
+  min-height: 280px;
+  cursor: auto;
+}
+
+@media (max-width: 600px) {
+  .apl-modal {
+    /* Colorbox version movil */
+    height: 100%;
+    background-color: inherit;
+    min-height: inherit;
+    padding: 0;
+  }
+}
+
+.apl-modal .container {
+  /*	General overwrite: reset bootstrap	*/
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: auto !important;
+  /* properties */
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .apl-modal .container {
+    padding: 20px;
+  }
+}
+
+.apl-modal.inline-modal .container {
+  padding: 20px;
+}
+
+/* @Basic -- Vertical align ***/
+.v-center {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  min-height: 280px;
+}
+
+.v-center .v-center-row {
+  display: table-row;
+}
+
+.v-center .v-center-column {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+  .v-center .v-center-column {
+    padding-bottom: 15%;
+  }
+}
+
+.v-center .v-center-column.v-align-top {
+  vertical-align: top;
+}
+
+@media (max-width: 640px) {
+  .v-center-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .apl-modal .highlighter {
+    width: 100%;
+  }
+}
+
+/* @Titulos ***/
+.apl-modal h2, .apl-modal .h2 {
+  font-size: 2rem;
+  color: #000000;
+  line-height: 1.25;
+}
+
+.apl-modal h5, .apl-modal .h5 {
+  font-size: 1.6rem;
+  color: #000000;
+  line-height: 1.25;
+}
+
+.apl-modal .title, .apl-modal .title p, .apl-modal .title p span {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #064f70;
+  text-align: center;
+}
+
+@media (min-device-width: 640px) {
+  .apl-modal .title, .apl-modal .title p, .apl-modal .title p span {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.apl-modal .cs-heading-modal-title {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #064f70;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .apl-modal .cs-heading-modal-title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.apl-modal .cs-heading-block-title {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+@media only screen and (min-width: 768px) {
+  .apl-modal .cs-heading-block-title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* @Paragraphs ***/
+.apl-modal p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: #555555;
+}
+
+.apl-modal p strong {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: normal;
+}
+
+.apl-modal p a {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.apl-modal .small, .apl-modal .small p {
+  font-size: 1.1rem;
+  line-height: 1.18182;
+}
+
+.apl-modal .cs-text-featured-mr {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@media (min-device-width: 640px) {
+  .apl-modal .cs-text-featured-mr {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+}
+
+.apl-modal .cs-text-bold {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+}
+
+.apl-modal .cs-text-semi-bold {
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+}
+
+.apl-modal .cs-text-regular {
+  font-family: "OpenSans", Arial, sans-serif;
+}
+
+/* @Anchors ***/
+.apl-modal a {
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #007EAE;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+}
+
+.apl-modal a.especial {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  color: #007EAE;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.apl-modal a:active {
+  color: #007EAE;
+}
+
+.apl-modal a:hover {
+  color: #007EAE;
+  cursor: pointer;
+}
+
+.apl-modal a[href]:focus {
+  color: #007EAE;
+  outline: 2px dotted #000000;
+  outline-offset: -2px;
+}
+
+.apl-modal a[rel="noopen"] {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* @Listados ***/
+.apl-modal ol li, .apl-modal ul li {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+}
+
+.apl-modal .no-bullet {
+  list-style-type: none;
+}
+
+.apl-modal .disc {
+  padding-left: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.apl-modal .disc li {
+  list-style-type: disc;
+  list-style-position: inside;
+  display: list-item;
+  margin: 0 0 .5rem 0;
+  /* reset inheritance */
+  background: none;
+  padding: 0;
+  text-align: left;
+}
+
+.apl-modal .disc li p {
+  display: inline-table;
+  width: 90%;
+  text-align: left;
+}
+
+.apl-modal .bullet-list li {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+  color: #555555;
+  background: transparent url("../../../../../../www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/ic_modal_bullet.png") center left no-repeat scroll;
+  background-position: .6rem .6rem;
+  padding-left: 3rem;
+  display: block;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.apl-modal .two-columns.icon-text {
+  max-width: 450px;
+}
+
+@media (max-width: 640px) {
+  .apl-modal .two-columns.icon-text {
+    width: 100%;
+  }
+}
+
+.apl-modal .two-columns.icon-text ul {
+  display: table;
+  table-layout: fixed;
+}
+
+.apl-modal .two-columns.icon-text ul li {
+  display: table-row;
+}
+
+.apl-modal .two-columns.icon-text ul li div {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 0 15px 0;
+}
+
+.apl-modal .two-columns.icon-text ul li div:first-child {
+  min-width: 60px;
+  padding-right: 25px;
+}
+
+.apl-modal .modal-md .bullet-list {
+  max-width: 355px;
+}
+
+@media (max-width: 640px) {
+  .apl-modal .modal-md .bullet-list {
+    width: 270px;
+  }
+}
+
+.apl-modal ul.modal-list-style, .apl-modal ol.modal-list-style {
+  list-style-type: none;
+}
+
+.apl-modal ul.modal-list-style li, .apl-modal ol.modal-list-style li {
+  background: transparent url("../../../../../../www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/bullet-ul.png") no-repeat;
+  background-position: 0.6rem 0.7rem;
+  padding: 0 0 1rem 3.2rem;
+  display: list-item;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.30769;
+  text-align: left;
+  margin-left: 0;
+}
+
+/* @Buttons ***/
+[type=button], [type=reset], [type=submit], button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+}
+
+button {
+  background-color: transparent;
+}
+
+.apl-modal .button {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  max-width: 26rem;
+  min-height: 5rem;
+}
+
+.apl-modal .button__label {
+  font-family: inherit;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.apl-modal .button > a {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+}
+
+.apl-modal .button.fit-content {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.ie .apl-modal .button.fit-content {
+  display: table;
+  max-width: inherit;
+  width: auto;
+}
+
+.apl-modal .button.blue {
+  background: #007EAE;
+  color: #FFFFFF;
+}
+
+.apl-modal .button.white {
+  background-color: #FFFFFF;
+  color: #007EAE;
+}
+
+.apl-modal .button:not(.disabled) [href]:focus {
+  outline: 2px dotted #000000;
+  outline-offset: 2px;
+}
+
+.apl-modal .single .button {
+  text-align: center;
+  width: 100%;
+  max-width: 26rem;
+  min-height: 5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.apl-modal .blue.button > a, .apl-modal .blue.button > a:hover,
+.apl-modal .blue .button > a,
+.apl-modal .blue .button > a:hover {
+  background: #007EAE;
+  color: #FFFFFF;
+}
+
+.apl-modal .button-outline {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.apl-modal .button-outline > a {
+  border: none !important;
+}
+
+.apl-modal .button-outline--brand {
+  border-color: #007EAE;
+  color: #007EAE;
+  background-color: #FFFFFF;
+}
+
+.apl-modal .button-outline--brand > a:hover {
+  color: #007EAE;
+}
+
+.apl-modal .outline.button {
+  background-color: #FFFFFF;
+  border: 1px solid #007EAE;
+}
+
+.apl-modal .outline.button > a, .apl-modal .outline.button > a:hover {
+  background: #FFFFFF;
+  color: #007EAE;
+}
+
+.apl-modal .boton_guardar {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+}
+
+.apl-modal .boton_guardar a {
+  background: url("../../../../../../www.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/ic_guardar.png") no-repeat left;
+}
+
+.apl-modal .group {
+  text-align: center;
+}
+
+.apl-modal .group .button {
+  display: inline-block;
+  margin: 0 auto 1rem auto;
+}
+
+@media (min-width: 655px) {
+  .apl-modal .group .button {
+    margin: 0 0 0 1rem;
+  }
+  .apl-modal .group .button:first-child {
+    margin-left: 0;
+  }
+}
+
+/* @Imagenes ***/
+.apl-modal .icon-top .icon {
+  width: 30px;
+}
+
+.apl-modal .icon-top img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* @Imagenes --imagen gif animado */
+.apl-modal .animate-icon span {
+  display: block;
+  margin: 0 auto;
+  width: 457px;
+}
+
+@media (max-width: 640px) {
+  .apl-modal .animate-icon span {
+    padding: 0 5%;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.apl-modal .animate-icon span img {
+  width: 100%;
+}
+
+.apl-modal#generandoContratos .animate-icon span {
+  margin: 0;
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .apl-modal#generandoContratos .animate-icon span {
+    padding: 0;
+  }
+}
+
+/* @Custom Grid */
+.l-grid-container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-grid-row {
+  position: relative;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  overflow: hidden;
+}
+
+.l-grid-row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.l-grid-row.no-gutters > .col,
+.l-grid-row.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.l-grid-col {
+  float: left;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.l-grid .clear {
+  clear: both;
+  height: 0;
+}
+
+/* @Utilities ***/
+.apl-modal .w10 {
+  width: 10%;
+}
+
+.apl-modal .w20 {
+  width: 20%;
+}
+
+.apl-modal .w30 {
+  width: 30%;
+}
+
+.apl-modal .w40 {
+  width: 40%;
+}
+
+.apl-modal .w50 {
+  width: 50%;
+}
+
+.apl-modal .w60 {
+  width: 60%;
+}
+
+.apl-modal .w70 {
+  width: 70%;
+}
+
+.apl-modal .w80 {
+  width: 80%;
+}
+
+.apl-modal .w90 {
+  width: 90%;
+}
+
+.apl-modal .w100 {
+  width: 100%;
+}
+
+.apl-modal .mw5 {
+  max-width: 5%;
+}
+
+.apl-modal .mw10 {
+  max-width: 10%;
+}
+
+.apl-modal .mw15 {
+  max-width: 15%;
+}
+
+.apl-modal .mw20 {
+  max-width: 20%;
+}
+
+.apl-modal .mw25 {
+  max-width: 25%;
+}
+
+.apl-modal .mw30 {
+  max-width: 30%;
+}
+
+.apl-modal .mw35 {
+  max-width: 35%;
+}
+
+.apl-modal .mw40 {
+  max-width: 40%;
+}
+
+.apl-modal .mw45 {
+  max-width: 45%;
+}
+
+.apl-modal .mw50 {
+  max-width: 50%;
+}
+
+.apl-modal .mw-10 {
+  max-width: 1rem;
+}
+
+.apl-modal .mw-20 {
+  max-width: 2rem;
+}
+
+.apl-modal .mw-30 {
+  max-width: 3rem;
+}
+
+.apl-modal .mw-40 {
+  max-width: 4rem;
+}
+
+.apl-modal .mw-50 {
+  max-width: 5rem;
+}
+
+.apl-modal .max-w145 {
+  max-width: 145px;
+}
+
+.apl-modal .max-w180 {
+  max-width: 180px;
+}
+
+.apl-modal .max-w280 {
+  max-width: 280px;
+}
+
+.apl-modal .max-w230 {
+  max-width: 230px;
+}
+
+.apl-modal .max-w360 {
+  max-width: 360px;
+}
+
+.apl-modal .max-w440 {
+  max-width: 440px;
+}
+
+.apl-modal .max-w540 {
+  max-width: 540px;
+}
+
+.apl-modal .max-w560 {
+  max-width: 560px;
+}
+
+.apl-modal .max-w600 {
+  max-width: 600px;
+}
+
+.apl-modal .pt0 {
+  padding-top: 0rem !important;
+}
+
+.apl-modal .pt5 {
+  padding-top: 0.5rem !important;
+}
+
+.apl-modal .pt10 {
+  padding-top: 1rem !important;
+}
+
+.apl-modal .pt15 {
+  padding-top: 1.5rem !important;
+}
+
+.apl-modal .pt20 {
+  padding-top: 2rem !important;
+}
+
+.apl-modal .pt25 {
+  padding-top: 2.5rem !important;
+}
+
+.apl-modal .pt30 {
+  padding-top: 3rem !important;
+}
+
+.apl-modal .pt35 {
+  padding-top: 3.5rem !important;
+}
+
+.apl-modal .pt40 {
+  padding-top: 4rem !important;
+}
+
+.apl-modal .pt45 {
+  padding-top: 4.5rem !important;
+}
+
+.apl-modal .pt50 {
+  padding-top: 5rem !important;
+}
+
+.apl-modal .pr0 {
+  padding-right: 0rem !important;
+}
+
+.apl-modal .pr5 {
+  padding-right: 0.5rem !important;
+}
+
+.apl-modal .pr10 {
+  padding-right: 1rem !important;
+}
+
+.apl-modal .pr15 {
+  padding-right: 1.5rem !important;
+}
+
+.apl-modal .pr20 {
+  padding-right: 2rem !important;
+}
+
+.apl-modal .pr25 {
+  padding-right: 2.5rem !important;
+}
+
+.apl-modal .pr30 {
+  padding-right: 3rem !important;
+}
+
+.apl-modal .pr35 {
+  padding-right: 3.5rem !important;
+}
+
+.apl-modal .pr40 {
+  padding-right: 4rem !important;
+}
+
+.apl-modal .pr45 {
+  padding-right: 4.5rem !important;
+}
+
+.apl-modal .pr50 {
+  padding-right: 5rem !important;
+}
+
+.apl-modal .pb0 {
+  padding-bottom: 0rem !important;
+}
+
+.apl-modal .pb5 {
+  padding-bottom: 0.5rem !important;
+}
+
+.apl-modal .pb10 {
+  padding-bottom: 1rem !important;
+}
+
+.apl-modal .pb15 {
+  padding-bottom: 1.5rem !important;
+}
+
+.apl-modal .pb20 {
+  padding-bottom: 2rem !important;
+}
+
+.apl-modal .pb25 {
+  padding-bottom: 2.5rem !important;
+}
+
+.apl-modal .pb30 {
+  padding-bottom: 3rem !important;
+}
+
+.apl-modal .pb35 {
+  padding-bottom: 3.5rem !important;
+}
+
+.apl-modal .pb40 {
+  padding-bottom: 4rem !important;
+}
+
+.apl-modal .pb45 {
+  padding-bottom: 4.5rem !important;
+}
+
+.apl-modal .pb50 {
+  padding-bottom: 5rem !important;
+}
+
+.apl-modal .pl0 {
+  padding-left: 0rem !important;
+}
+
+.apl-modal .pl5 {
+  padding-left: 0.5rem !important;
+}
+
+.apl-modal .pl10 {
+  padding-left: 1rem !important;
+}
+
+.apl-modal .pl15 {
+  padding-left: 1.5rem !important;
+}
+
+.apl-modal .pl20 {
+  padding-left: 2rem !important;
+}
+
+.apl-modal .pl25 {
+  padding-left: 2.5rem !important;
+}
+
+.apl-modal .pl30 {
+  padding-left: 3rem !important;
+}
+
+.apl-modal .pl35 {
+  padding-left: 3.5rem !important;
+}
+
+.apl-modal .pl40 {
+  padding-left: 4rem !important;
+}
+
+.apl-modal .pl45 {
+  padding-left: 4.5rem !important;
+}
+
+.apl-modal .pl50 {
+  padding-left: 5rem !important;
+}
+
+.apl-modal .mt0 {
+  margin-top: 0rem !important;
+}
+
+.apl-modal .mt5 {
+  margin-top: 0.5rem !important;
+}
+
+.apl-modal .mt10 {
+  margin-top: 1rem !important;
+}
+
+.apl-modal .mt15 {
+  margin-top: 1.5rem !important;
+}
+
+.apl-modal .mt20 {
+  margin-top: 2rem !important;
+}
+
+.apl-modal .mt25 {
+  margin-top: 2.5rem !important;
+}
+
+.apl-modal .mt30 {
+  margin-top: 3rem !important;
+}
+
+.apl-modal .mt35 {
+  margin-top: 3.5rem !important;
+}
+
+.apl-modal .mt40 {
+  margin-top: 4rem !important;
+}
+
+.apl-modal .mt45 {
+  margin-top: 4.5rem !important;
+}
+
+.apl-modal .mt50 {
+  margin-top: 5rem !important;
+}
+
+.apl-modal .mr0 {
+  margin-right: 0rem !important;
+}
+
+.apl-modal .mr5 {
+  margin-right: 0.5rem !important;
+}
+
+.apl-modal .mr10 {
+  margin-right: 1rem !important;
+}
+
+.apl-modal .mr15 {
+  margin-right: 1.5rem !important;
+}
+
+.apl-modal .mr20 {
+  margin-right: 2rem !important;
+}
+
+.apl-modal .mr25 {
+  margin-right: 2.5rem !important;
+}
+
+.apl-modal .mr30 {
+  margin-right: 3rem !important;
+}
+
+.apl-modal .mr35 {
+  margin-right: 3.5rem !important;
+}
+
+.apl-modal .mr40 {
+  margin-right: 4rem !important;
+}
+
+.apl-modal .mr45 {
+  margin-right: 4.5rem !important;
+}
+
+.apl-modal .mr50 {
+  margin-right: 5rem !important;
+}
+
+.apl-modal .mb0 {
+  margin-bottom: 0rem !important;
+}
+
+.apl-modal .mb5 {
+  margin-bottom: 0.5rem !important;
+}
+
+.apl-modal .mb10 {
+  margin-bottom: 1rem !important;
+}
+
+.apl-modal .mb15 {
+  margin-bottom: 1.5rem !important;
+}
+
+.apl-modal .mb20 {
+  margin-bottom: 2rem !important;
+}
+
+.apl-modal .mb25 {
+  margin-bottom: 2.5rem !important;
+}
+
+.apl-modal .mb30 {
+  margin-bottom: 3rem !important;
+}
+
+.apl-modal .mb35 {
+  margin-bottom: 3.5rem !important;
+}
+
+.apl-modal .mb40 {
+  margin-bottom: 4rem !important;
+}
+
+.apl-modal .mb45 {
+  margin-bottom: 4.5rem !important;
+}
+
+.apl-modal .mb50 {
+  margin-bottom: 5rem !important;
+}
+
+.apl-modal .ml0 {
+  margin-left: 0rem !important;
+}
+
+.apl-modal .ml5 {
+  margin-left: 0.5rem !important;
+}
+
+.apl-modal .ml10 {
+  margin-left: 1rem !important;
+}
+
+.apl-modal .ml15 {
+  margin-left: 1.5rem !important;
+}
+
+.apl-modal .ml20 {
+  margin-left: 2rem !important;
+}
+
+.apl-modal .ml25 {
+  margin-left: 2.5rem !important;
+}
+
+.apl-modal .ml30 {
+  margin-left: 3rem !important;
+}
+
+.apl-modal .ml35 {
+  margin-left: 3.5rem !important;
+}
+
+.apl-modal .ml40 {
+  margin-left: 4rem !important;
+}
+
+.apl-modal .ml45 {
+  margin-left: 4.5rem !important;
+}
+
+.apl-modal .ml50 {
+  margin-left: 5rem !important;
+}
+
+/* Miscellanea */
+.apl-modal .d-ib {
+  display: inline-block;
+}
+
+.apl-modal .d-inb {
+  display: inline-block;
+}
+
+.apl-modal .d-inb:not(:first-child) {
+  margin-left: -4px;
+}
+
+.apl-modal .fl {
+  float: left;
+}
+
+.apl-modal .fr {
+  float: right;
+}
+
+.apl-modal .clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.apl-modal .over-h {
+  overflow: hidden;
+}
+
+.apl-modal .center {
+  text-align: center;
+}
+
+.apl-modal .text-left {
+  text-align: left;
+}
+
+.apl-modal .text-center {
+  text-align: center;
+}
+
+.apl-modal .text-right {
+  text-align: right;
+}
+
+.apl-modal .justify {
+  text-align: justify;
+}
+
+.apl-modal .lg-cb {
+  clear: both;
+  display: block;
+}
+
+.apl-modal .m0auto {
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .apl-modal .max-wauto--sm {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .apl-modal .md-cb {
+    clear: both;
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .apl-modal .xs-cb {
+    clear: both;
+    display: block;
+  }
+}
+
+.apl-modal .d-none {
+  display: none !important;
+}
+
+.apl-modal .d-block {
+  display: none !important;
+}
+
+@media (min-width: 640px) {
+  .apl-modal .d-sm-none {
+    display: none !important;
+  }
+  .apl-modal .d-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .apl-modal .d-md-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .apl-modal .d-lg-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .apl-modal .d-xl-none {
+    display: none !important;
+  }
+}
+
+.apl-modal .align-top {
+  vertical-align: top;
+}
+
+.apl-modal .align-middle {
+  vertical-align: middle;
+}
+
+/* @Custom content: Confirmar teléfono */
+
+/* @Custom content: Cancelar el proceso de alta [ Flujo MVP ] */
+@media (max-width: 639px) {
+  #cancelarProcesoAlta li.fl {
+    float: none;
+    margin-bottom: 2rem;
+  }
+}
+
+#cancelarProcesoAlta li.fl .button {
+  min-width: 224px;
+}
+
+@media (max-width: 639px) {
+  #cancelarProcesoAlta li.fl:last-child {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 639px) {
+  #cancelarProcesoAlta li.fl:last-child {
+    margin-left: 2rem;
+  }
+}
+
+/* @Custom content: Empresas del grupo CaixaBank [ Flujo MVP ] */
+.l-fluid__item {
+  display: block;
+}
+
+@media (min-width: 611px) {
+  .l-fluid__item {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+@media (min-width: 514px) {
+  .l-fluid__item--3c {
+    display: inline-block;
+    width: calc(50%);
+  }
+}
+
+@media (min-width: 611px) {
+  .l-fluid__item--3c {
+    width: calc(33.33%);
+  }
+}
+
+@media (min-width: 514px) {
+  .l-fluid__item--3c.l-bordered__item--inside {
+    width: calc(50% + 2px);
+  }
+}
+
+@media (min-width: 611px) {
+  .l-fluid__item--3c.l-bordered__item--inside {
+    width: calc(33.33% + 2px);
+  }
+}
+
+.l-fluid__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.l-bordered__item--inside {
+  margin-left: -2px;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid #dddddd;
+}
+
+.l-bordered__item--inside:nth-last-child(1) {
+  border-bottom: 2px solid transparent;
+}
+
+@media (min-width: 514px) {
+  .l-bordered__item--inside:nth-child(2n+1) {
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid #dddddd;
+  }
+  .l-bordered__item--inside:nth-child(2n) {
+    border-left: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+  }
+  .l-bordered__item--inside:nth-last-child(2) {
+    border-bottom: 2px solid transparent;
+  }
+  .l-bordered__item--inside:nth-last-child(1) {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+@media (min-width: 611px) {
+  .l-bordered__item--inside, .l-bordered__item--inside:nth-child(2n+1) {
+    border-left: 2px solid #dddddd;
+  }
+  .l-bordered__item--inside:nth-child(0n+1), .l-bordered__item--inside:nth-child(3n+4) {
+    border-left: 2px solid transparent;
+  }
+  .l-bordered__item--inside:nth-last-child(1) {
+    border-right: none;
+  }
+  .l-bordered__item--inside:nth-last-child(1), .l-bordered__item--inside:nth-last-child(2) {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+/* Version alternativa 2/3 columns */
+.logo-responsive-grid .v-center-column {
+  padding-bottom: 0;
+}
+/* Version especial 1 columns */
+.logo-responsive-grid .h-col {
+  width: auto;
+}
+
+@media only screen and (min-width: 485px) {
+  .logo-responsive-grid .h-col {
+    width: 60%;
+  }
+}
+
+/*  @Custom content: @STEP Firma tu contrato: Control de sesiÓn */
+.apl-modal .c-timer__text--countdown {
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+  font-size: 5.5rem;
+  line-height: 1.25455;
+}
+
+/* @Custom content: Listado de documentación valida por pais [ Flujo HBK ] */
+.apl-modal .c-id-documents__country {
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  padding: 0.5rem 0 1rem 0 /* reset heritance */;
+}
+
+@media (min-width: 639px) {
+  .apl-modal .c-id-documents__country {
+    margin: 0 1rem;
+    width: calc( (100% / 2) - 1rem);
+  }
+  .apl-modal .c-id-documents__country:nth-child(odd) {
+    margin-left: 0;
+  }
+  .apl-modal .c-id-documents__country:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.apl-modal .c-id-documents__flag {
+  padding: .2rem 0;
+  width: 2rem;
+  height: auto;
+}
+
+.apl-modal .c-id-documents__title {
+  letter-spacing: -0.15px;
+  color: #007EAE;
+}
+
+.apl-modal .c-id-documents__title strong {
+  color: inherit;
+}
+
+/*  @Custom content: @STEP Firma tu contrato: US87719 Mejoras UIX [ Flujo HBK ] */
+.apl-modal .cc-contract-sign-1 {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apl-modal .cc-contract-sign-1 .c-list {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.apl-modal .cc-contract-sign-1 .c-list > li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.apl-modal .cc-contract-sign-1 .c-list_theme_icon-left img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.apl-modal .cc-contract-sign-1 .c-list_theme_icon-left img ~ p {
+  display: inline-block;
+  max-width: 80%;
+  margin-left: .5rem;
+}
+
+.apl-modal .cc-session-expired {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apl-modal .cc-session-expired .c-box {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .apl-modal .cc-session-expired .c-box {
+    margin-bottom: 3rem;
+  }
+}
+
+.apl-modal .cc-session-expired .c-modal__app .c-modal__buttons {
+  font-size: 0;
+}
+
+.apl-modal .cc-session-expired .c-modal__app .c-modal__buttons .c-modal__badge {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(50% - .75rem);
+  margin-left: 1.5rem;
+}
+
+.apl-modal .cc-session-expired .c-modal__app .c-modal__buttons .c-modal__badge:first-child {
+  margin-left: 0;
+}
+
+/*  @Custom content: @STEP Crea tu cuenta: Password [ Flujo ALL ] */
+.apl-modal .cc-acces-to-caixabank-1 {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apl-modal .cc-acces-to-caixabank-1 .c-list {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .apl-modal .cc-acces-to-caixabank-1 .c-list {
+    padding: 0 1.5rem;
+  }
+}
+
+.apl-modal .cc-acces-to-caixabank-1 .c-list > li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.apl-modal .cc-acces-to-caixabank-1 .c-list_theme_icon-left {
+  font-size: 0;
+}
+
+.apl-modal .cc-acces-to-caixabank-1 .c-list_theme_icon-left img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.apl-modal .cc-acces-to-caixabank-1 .c-list_theme_icon-left img ~ p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: inline-block;
+  max-width: calc( 100% - 4.75rem);
+  margin-left: 1rem;
+}
+
+/*  @Custom content: @Gestiona tus datos: Empresas del grupo caixabank [ Flujo ALL ] */
+.apl-modal .cc-cbk-group {
+  display: block;
+  max-width: 18rem;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .apl-modal .cc-cbk-group {
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .apl-modal .cc-cbk-group {
+    max-width: 54rem;
+  }
+}
+
+.apl-modal .cc-cbk-group__item {
+  display: inline-block;
+  max-width: 16rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .apl-modal .cc-cbk-group__item {
+    max-width: 18rem;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* @Custom content: ¿Qué se considera Personas de Responsabilidad Públicas? [ Flujo ALL ] */
+.apl-modal .c-collapsible-sections__header {
+  border-top: 1px solid #c8d2dd;
+  padding: 1rem 2rem;
+}
+
+.apl-modal .c-collapsible-sections__header button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  position: relative;
+}
+
+.apl-modal .c-collapsible-sections__header button::after {
+  position: absolute;
+  top: .45rem;
+  right: 0;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_arrow-down.svg");
+}
+
+.apl-modal .c-collapsible-sections__header button:focus {
+  outline: 2px dotted #111111;
+  outline-offset: 0.2rem;
+}
+
+.apl-modal .c-collapsible-sections__header button[aria-expanded="true"]::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.apl-modal .c-collapsible-sections .collapse {
+  display: none;
+  padding: 0 2rem 2rem 2rem;
+}
+
+/** @Theme: 'Document viewer' - Request US179408  */
+.apl-modal_theme-document-view {
+  height: 100%;
+}
+
+.apl-modal_theme-document-view .apl-modal__container {
+  position: relative;
+  padding: 2rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.apl-modal_theme-document-view .apl-modal__body {
+  background-color: whitesmoke;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+}
+
+.apl-modal_theme-document-view .apl-modal__header .apl-modal__nav-bar {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .apl-modal_theme-document-view .apl-modal__header .apl-modal__nav-bar {
+    margin-bottom: 2rem;
+  }
+}
+
+.apl-modal_theme-document-view .apl-modal__header .apl-modal__nav-bar button, .apl-modal_theme-document-view .apl-modal__header .apl-modal__nav-bar a[role="button"], .apl-modal_theme-document-view .apl-modal__header .apl-modal__nav-bar h1 {
+  vertical-align: middle;
+}
+
+.apl-modal_theme-document-view .apl-modal__footer .apl-modal__nav-bar {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .apl-modal_theme-document-view .apl-modal__footer .apl-modal__nav-bar {
+    margin-bottom: 2rem;
+  }
+}
+
+.apl-modal_theme-document-view .apl-modal__footer .apl-modal__nav-bar button:disabled {
+  background-color: rgba(0, 126, 174, 0.3);
+}
+
+.apl-modal_theme-document-view .apl-modal__title {
+  display: inline-block;
+  margin: 0 1rem;
+  width: calc(100% - 8rem);
+  /* (26x2 + 10x2 + 4x2) */
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #004f70;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .apl-modal_theme-document-view .apl-modal__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+.apl-modal_theme-document-view .btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  min-height: 100%;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.apl-modal_theme-document-view .btn-icon {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.apl-modal_theme-document-view .icon-x24 {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.apl-modal_theme-document-view .icon-back {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_back.svg");
+}
+
+.apl-modal_theme-document-view .icon-cross {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_cross.svg");
+}
+
+.apl-modal_theme-document-view .icon-download {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_download.svg");
+}
+
+.apl-modal_theme-document-view .d-n {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .apl-modal_theme-document-view .d-sm-none {
+    display: none;
+  }
+  .apl-modal_theme-document-view .d-sm-inline-block {
+    display: inline-block;
+  }
+}
+
+.ie-9 .apl-modal_theme-document-view .apl-modal__body {
+  height: 78%;
+}
+
+@media (max-width: 639px) {
+  .safari .apl-modal_theme-document-view .apl-modal__body {
+    overflow-y: scroll;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.safari .apl-modal_theme-document-view .apl-modal__body iframe.pdf {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.apl-modal_theme-document-view .pdf {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: height .0125s ease-in-out, opacity .3s ease-in-out;
+  -o-transition: height .0125s ease-in-out, opacity .3s ease-in-out;
+  transition: height .0125s ease-in-out, opacity .3s ease-in-out;
+}
+
+.open .apl-modal_theme-document-view .pdf {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  height: 100%;
+}
+
+/* End */
+
+
+/* @Custom content: Términos y condiciones - Visor PDF - 'lectura obligatoria' [ Flujo ALL ] */
+.apl-modal--theme-legal-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 20px 10px 20px;
+  background-color: white;
+  overflow: hidden;
+}
+@media (min-width: 640px) and (min-height: 400px) {
+  .apl-modal--theme-legal-info {
+    height: auto;
+    padding: 0 20px 20px 20px;
+  }
+}
+.apl-modal--theme-legal-info .apl-modal__header {
+  width: 100%;
+  padding: 13px 0;
+}
+@media all and (min-width: 640px) and (min-height: 400px) {
+  .apl-modal--theme-legal-info .apl-modal__header {
+    padding: 20px 0;
+  }
+}
+.apl-modal--theme-legal-info .apl-modal__body {
+  position: relative;
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100% - 140px);
+  overflow-y: auto;
+}
+@media (min-width: 640px) and (min-height: 400px) and (max-height: 720px) {
+  .apl-modal--theme-legal-info .apl-modal__body {
+    max-height: calc(100vh - 294px);
+  }
+}
+@media all and (min-width: 640px) and (min-height: 720px) {
+  .apl-modal--theme-legal-info .apl-modal__body {
+    max-height: 425px;
+  }
+}
+.apl-modal--theme-legal-info .apl-modal__footer {
+  width: 100%;
+  flex-shrink: 0;
+}
+.apl-modal--theme-legal-info[data-rel=html] .apl-modal__header {
+  width: 100%;
+  padding: 15px 0;
+}
+@media all and (min-width: 640px) and (min-height: 400px) {
+  .apl-modal--theme-legal-info[data-rel=html] .apl-modal__header {
+    padding: 20px 0;
+  }
+}
+.apl-modal--theme-legal-info[data-rel=html] .apl-modal__body {
+  max-height: calc(100% - 186px);
+}
+@media (min-width: 640px) and (min-height: 400px) and (max-height: 720px) {
+  .apl-modal--theme-legal-info[data-rel=html] .apl-modal__body {
+    max-height: calc(100vh - 332px);
+  }
+}
+@media all and (min-width: 640px) and (min-height: 720px) {
+  .apl-modal--theme-legal-info[data-rel=html] .apl-modal__body {
+    max-height: 381px;
+  }
+}
+@media all and (min-width: 640px) and (min-height: 768px) {
+  .apl-modal--theme-legal-info[data-rel=html] .apl-modal__body {
+    max-height: 425px;
+  }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+  .apl-modal--theme-legal-info.-title--multiline .apl-modal__body {
+    max-height: calc(100% - 160px);
+  }
+}
+@media (orientation: portrait) {
+  .apl-modal--theme-legal-info.required-full-read .apl-modal__body {
+    max-height: calc(100% - 195px);
+  }
+}
+@media (orientation: landscape) and (max-height: 400px) {
+  .apl-modal--theme-legal-info.required-full-read .apl-modal__body {
+    max-height: calc(100% - 177px);
+  }
+}
+@media (min-width: 640px) and (min-height: 400px) and (max-height: 720px) {
+  .apl-modal--theme-legal-info.required-full-read .apl-modal__body {
+    max-height: calc(100vh - 331px);
+  }
+}
+@media all and (min-width: 640px) and (min-height: 720px) {
+  .apl-modal--theme-legal-info.required-full-read .apl-modal__body {
+    max-height: 388px;
+  }
+}
+@media all and (min-width: 640px) and (min-height: 760px) {
+  .apl-modal--theme-legal-info.required-full-read .apl-modal__body {
+    max-height: 425px;
+  }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+  .apl-modal--theme-legal-info.required-full-read.-title--multiline .apl-modal__body {
+    max-height: calc(100% - 215px);
+  }
+}
+.apl-modal--theme-legal-info .apl-modal__title {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #064f70;
+  letter-spacing: 0;
+  font-weight: 100;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: inline-block;
+  margin: 0 1rem;
+}
+@media (min-device-width: 640px) and (min-device-height: 720px) {
+  .apl-modal--theme-legal-info .apl-modal__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+.apl-modal--theme-legal-info[data-rel=pdf] .apl-modal__title {
+  width: calc(100% - 7.8rem);
+}
+.apl-modal--theme-legal-info[data-rel=html] .apl-modal__title {
+  margin: 0 0 0 1rem;
+  width: calc(100% - 3.4rem);
+}
+@media (min-device-width: 640px) {
+  .apl-modal--theme-legal-info[data-rel=html] .apl-modal__title {
+    margin: 0 1rem 0 0;
+  }
+}
+.apl-modal--theme-legal-info .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  min-height: initial;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.apl-modal--theme-legal-info .btn:active, .apl-modal--theme-legal-info .btn:focus {
+  box-shadow: none;
+  outline: 2px dotted #111111;
+  outline-offset: 2px;
+}
+.apl-modal--theme-legal-info .btn-icon {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.apl-modal--theme-legal-info .icon-x24 {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.apl-modal--theme-legal-info .icon-back {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_back.svg");
+}
+.apl-modal--theme-legal-info .icon-cross {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_cross.svg");
+}
+.apl-modal--theme-legal-info .icon-download {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_download.svg");
+}
+.apl-modal--theme-legal-info .canvas-wrapper {
+  padding: 10px;
+}
+.apl-modal--theme-legal-info .show-in-xs {
+  display: inline-block;
+}
+@media (min-device-width: 640px) and (min-device-height: 720px) {
+  .apl-modal--theme-legal-info .show-in-xs {
+    display: none;
+  }
+}
+.apl-modal--theme-legal-info .show-from-xs {
+  display: none;
+}
+@media (min-device-width: 640px) and (min-device-height: 720px) {
+  .apl-modal--theme-legal-info .show-from-xs {
+    display: inline-block;
+  }
+}
+.apl-modal--theme-legal-info .iframe {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100% - 164px);
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+.apl-modal--theme-legal-info .canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto 5px auto;
+}
+@media (min-width: 640px) and (min-height: 720px) {
+  .apl-modal--theme-legal-info .canvas {
+    margin: 0 auto 20px auto;
+  }
+}
+.apl-modal--theme-legal-info.is-hidden {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+}
+.apl-modal--theme-legal-info .help-text {
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-weight: 600;
+}
+.apl-modal--theme-confirm-window {
+  border-radius: 3px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+@media (min-height: 375px) {
+  .apl-modal--theme-confirm-window {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 640px) and (min-height: 400px) {
+  .apl-modal--theme-confirm-window {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0;
+  }
+}
+.apl-modal--theme-confirm-window .apl-modal__body {
+  position: relative;
+}
+
+.fade-in.-fast {
+  -webkit-animation: fade-in 0.25s ease-in-out both;
+  animation: fade-in 0.25s ease-in-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out.-fast {
+  -webkit-animation: fade-out 0.25s ease-in-out both;
+  animation: fade-out 0.25s ease-in-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* End */
+
+/*  @Custom content: Términos y condiciones - Visor PDF - Confirmar cierre del documento 'lectura obligatoria' [ Flujo ALL ] */
+.apl-modal.cc-confirm-conditions {
+  padding: 2rem;
+}
+@media (min-width: 640px) and (min-height: 400px) {
+  .apl-modal.cc-confirm-conditions {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+.apl-modal.cc-confirm-conditions p {
+  text-align: center;
+}
+.apl-modal.cc-confirm-conditions .btn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  line-height: 0;
+  font-size: 0;
+  width: auto;
+  max-width: initial;
+  min-height: initial;
+}
+.apl-modal.cc-confirm-conditions .btn:active, .apl-modal.cc-confirm-conditions .btn:focus {
+  box-shadow: none;
+  outline: 2px dotted #111111;
+  outline-offset: 2px;
+}
+.apl-modal.cc-confirm-conditions .btn-icon {
+  background-color: white;
+}
+.apl-modal.cc-confirm-conditions .btn-icon:not(.icon-x16) {
+  padding: 0.4rem;
+  margin: 1.6rem;
+}
+.apl-modal.cc-confirm-conditions .btn-icon.icon-x16 {
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  min-height: 1px;
+}
+.apl-modal.cc-confirm-conditions .icon-x16 {
+  width: 16px;
+  height: 16px;
+}
+.apl-modal.cc-confirm-conditions .icon-cross {
+  background-image: url("https://www4.caixabank.es/deployedfiles/particulares/CSS/Estaticos/images/AltaClienteOnline/svg/icon_cross.svg");
+}
+.apl-modal.cc-confirm-conditions .nav {
+  font-size: 0;
+  text-align: center;
+  margin: 30px 0 30px;
+}
+@media (min-width: 641px) and (min-height: 400px) {
+  .apl-modal.cc-confirm-conditions .nav {
+    margin: 30px 0 50px;
+  }
+}
+.apl-modal.cc-confirm-conditions .nav .btn {
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  width: 100%;
+  max-width: 260px;
+  padding: 1.5rem;
+  text-align: center;
+}
+.apl-modal.cc-confirm-conditions .nav .btn__label {
+  color: inherit;
+}
+.apl-modal.cc-confirm-conditions .nav .btn-close {
+  border-color: #007eae;
+  background-color: white;
+  color: #007eae;
+  box-shadow: inset 0px 0px 0px 1px #007eae;
+  margin-bottom: 2rem;
+}
+@media (min-width: 641px) {
+  .apl-modal.cc-confirm-conditions .nav .btn-close {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+.apl-modal.cc-confirm-conditions .nav .btn-continue {
+  background-color: #007eae;
+  color: white;
+}
+@media (min-width: 641px) {
+  .apl-modal.cc-confirm-conditions .nav .btn-continue {
+    margin-left: 2rem;
+    display: inline-block;
+  }
+}
+.apl-modal.cc-confirm-conditions #cboxCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* End */
+
+/*  @Custom content: @Animaciones para 'procesando datos' y 'generando contratos' [ Flujo ALL ] */
+.apl-modal .-theme-data-processing-modal {
+  text-align: center;
+  padding: 0 2rem;
+}
+@media (min-width: 640px) {
+  .apl-modal .-theme-data-processing-modal {
+    padding: 5rem;
+  }
+}
+.apl-modal .-theme-data-processing-modal picture source, .apl-modal .-theme-data-processing-modal picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.apl-modal .-theme-data-processing-modal .c-modal__header {
+  padding-bottom: 3rem;
+}
+@media (min-width: 640px) {
+  .apl-modal .-theme-data-processing-modal .c-modal__header {
+    padding-bottom: 4rem;
+  }
+}
+
+/*  @Custom content: @Configuración: 'Documentos a enviar' en 'subir documentación autónomos' [ Flujo ALL ] */
+@media (min-width: 640px) {
+  .apl-modal .-theme-documents-to-send-modal {
+    padding: 0 3rem;
+  }
+}
+
+/*  @Custom content: @Caja con icono a la izquierda */
+.apl-modal .c-box {
+  border: 1px solid transparent;
+  padding: 2rem;
+  margin-bottom: -1px;
+  background-color: white;
+}
+.apl-modal .c-box-inner-fit {
+  padding: 0;
+}
+.apl-modal .c-box-inner-fit--x {
+  padding-left: 0;
+  padding-right: 0;
+}
+.apl-modal .c-box-inner-fit--y {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.apl-modal .c-box_theme_text-with-icon {
+  font-size: 0;
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon, .apl-modal .c-box_theme_text-with-icon .c-box__detail {
+  display: inline-block;
+  vertical-align: top;
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon {
+  margin-right: 1.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .apl-modal .c-box_theme_text-with-icon .c-box__icon {
+    margin-right: 2rem;
+  }
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon--x25 {
+  width: 2.5rem;
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon--x25 ~ .c-box__detail {
+  width: calc(100% - (2.5rem + 1.6rem));
+}
+@media only screen and (min-width: 768px) {
+  .apl-modal .c-box_theme_text-with-icon .c-box__icon--x25 ~ .c-box__detail {
+    width: calc(100% - (2.5rem + 2rem));
+  }
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon--x32 {
+  width: 3.2rem;
+}
+.apl-modal .c-box_theme_text-with-icon .c-box__icon--x32 ~ .c-box__detail {
+  width: calc(100% - (3.2rem + 1.6rem));
+}
+@media only screen and (min-width: 768px) {
+  .apl-modal .c-box_theme_text-with-icon .c-box__icon--x32 ~ .c-box__detail {
+    width: calc(100% - (3.2rem + 2rem));
+  }
+}
+
+/*  @Custom content: @Default layout' [ Flujo APOD ] */
+@media (min-width: 640px) {
+  .apl-modal .-theme-default-layout {
+    padding: 0 4.5rem;
+  }
+}
+
+/* Only mobile devices: Portrait */
+@media screen and (max-device-width: 414px) and (orientation: portrait) {
+  .apl-modal .d-only-mobile-b {
+    display: block !important;
+  }
+  .apl-modal .d-only-mobile-n {
+    display: none !important;
+  }
+}
+
+/* Only mobile devices: Landscape */
+@media screen and (max-device-width: 896px) and (orientation: landscape) {
+  .apl-modal .d-only-mobile-b {
+    display: block !important;
+  }
+  .apl-modal .d-only-mobile-n {
+    display: none !important;
+  }
+}
+
+/* [UIX 2020] */
+.c-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+
+.c-list li {
+  background: none;
+  padding: 0;
+}
+
+.c-list__item {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.c-list-st-disc > li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.c-list-st-disc > li::before {
+  content: "";
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  background-color: #68777d;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: .65rem;
+}
+
+.c-list-st-circle > li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.c-list-st-circle > li::before {
+  content: "";
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  background-color: white;
+  border: 0.15rem solid #555555;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: .7rem;
+}
+
+.c-list-st-hyphen > li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.c-list-st-hyphen > li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  top: -.15rem;
+}
+
+.c-list-primary[class*="st-disc"] > li::before {
+  background-color: #007eae;
+}
+
+.c-list-primary[class*="st-circle"] > li::before {
+  border-color: #007eae;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-list-primary .c-list__item {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.c-list_theme-data-treatment > li:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.c-list_theme-data-treatment > li > ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-top: 0.5rem;
+}
+.c-list_theme-data-treatment > li > ul > li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+.c-list_theme-data-treatment > li > ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: white;
+  border: 0.1rem solid #007eae;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: .7rem;
+}
+.c-list_theme-data-treatment > li > ul > li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c-list-vs-5x > li:not(:last-child) {
+  margin: 0.5rem;
+}
+.c-list-vs-bottom-5x > li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.c-list-vs-bottom-10x > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.c-list-vs-bottom-15x > li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.c-list-vs-bottom-20x > li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* @Colors ***/
+.apl-modal .text-neutral-140 {
+  color: #666666;
+}
+.apl-modal .text-neutral-180 {
+  color: #333333;
+}
+.apl-modal .text-black {
+  color: black;
+}
+
+.apl-modal .text-gray-dark {
+  color: #68777d;
+}
+
+.apl-modal .text-gray-medium {
+  color: #89949e;
+}
+
+.apl-modal .text-gray-medium-light {
+  color: #c8d2dd;
+}
+
+.apl-modal .text-gray-light {
+  color: #e6e9ec;
+}
+
+.apl-modal .text-gray-lighter {
+  color: whitesmoke;
+}
+
+.apl-modal .text-white {
+  color: white;
+}
+
+.apl-modal .text-br-blue {
+  color: #007eae;
+}
+
+.apl-modal .text-br-blue-dark {
+  color: #064f70;
+}
+
+.apl-modal .text-br-blue-soft {
+  color: #e5f5fc;
+}
+
+.apl-modal .text-br-yellow {
+  color: #f4c014;
+}
+
+.apl-modal .text-br-gray {
+  color: #555555;
+}
+
+.apl-modal .text-br-black {
+  color: #111111;
+}
+
+.apl-modal .text-success {
+  color: #008535;
+}
+
+.apl-modal .text-danger {
+  color: #e51029;
+}
+
+.apl-modal .text-valid {
+  color: #008535;
+}
+
+.apl-modal .text-error {
+  color: #e51029;
+}
+
+.apl-modal .text-warning {
+  color: #fdf5d8;
+}
+
+.apl-modal .text-info {
+  color: #e5f5fc;
+}
+
+/* > Text */
+
+.apl-modal .break-word {
+  word-break: break-all;
+}
+
+.ie .apl-modal .break-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-break: break-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.ie-9 .apl-modal .break-word {
+  display: inline-block;
+  width: calc(100% - 40px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
